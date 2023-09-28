@@ -53,18 +53,38 @@ gem install jekyll bundler
 ```
 
 #### For MacOS:
-
 If you're on MacOS, follow these steps:
-
 Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed.
 
-Use the following commands to install Ruby and Bundler:
-
+- Install `chruby` and `ruby-install` with Homebrew:
 ```bash
-brew install ruby
-gem install jekyll bundler
+brew install chruby ruby-install xz
 ```
 
+- Install the latest stable version of Ruby (supported by Jekyll):
+```bash
+ruby-install ruby 3.1.3
+```
+
+- This will take a few minutes, and once it’s done, configure your shell to automatically use chruby:
+```bash
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
+```
+
+> If you’re using Bash, replace `.zshrc` with `.bash_profile`. If you’re not sure, read this external guide to [find out which shell you’re using](https://www.moncefbelyamani.com/which-shell-am-i-using-how-can-i-switch/ "find you shell").
+{: .prompt-info}
+
+- Quit and relaunch Terminal, then check that everything is working:
+```bash
+ruby -v
+```
+
+- After installing Ruby with chruby, install the latest Jekyll & bundler gem:
+```bash
+gem install bundler jekyll
+```
 ### Building the Project
 
 After setting up the environment, you can start contributing to the project:
