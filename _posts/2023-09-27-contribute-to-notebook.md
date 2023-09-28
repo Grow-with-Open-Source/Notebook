@@ -16,28 +16,34 @@ Welcome to the **Notebook** open-source project, where you can be a part of a th
 
 It's highly recommended to use any Linux distro compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Troubleshooting](https://github.com/Grow-with-Open-Source/Notebook/discussions/2 "Goto Troubleshooting Discussion")...
 
-#### For Linux Distros:
+#### For Ubuntu:
 
-If you're using a Linux distribution, follow these steps:
+If you're using a Linux distribution - Ubuntu, follow these steps:
 
-> Update and upgrade your system:
-
-```bash
-sudo apt update -y && sudo apt full-upgrade -y
-```
-
-> Install Ruby and essential dependencies:
-
+- Install `Ruby` and other prerequisites:
 ```bash
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
-> If you encounter any issues, try these commands:
-
+> Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem installation directory for your user account. The following commands will add environment variables to your ~/.bashrc file to configure the gem installation path:
 ```bash
-sudo snap install ruby --classic
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+{: .prompt-info}
+
+- Finally, install Jekyll and Bundler:
+```bash
 gem install jekyll bundler
 ```
+
+> For Other Linux Distros, check the offical Jekyll webpage[^other-linux-distros-installation]. Also make sure, you have installed `bundler` along with jekyll using the follow command:
+```bash
+gem install bundler
+```
+{: .prompt-tip}
 
 #### For Windows:
 
@@ -172,5 +178,5 @@ image:
 Please ensure your contributions adhere to these guidelines to maintain consistency and make the project more accessible and user-friendly. Happy contributing!
 
 ## Footnote
-
+[^other-linux-distros-installation]: **Other Linux Distro Installation:** <https://jekyllrb.com/docs/installation/other-linux/>
 [^chirpy-theme-writing]: Chirpy-based [post creation](https://chirpy.cotes.page/posts/write-a-new-post/) and [text and typography](https://chirpy.cotes.page/posts/text-and-typography/).
