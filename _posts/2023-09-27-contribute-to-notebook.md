@@ -17,35 +17,41 @@ Welcome to the [**Notebook**](https://github.com/Grow-with-Open-Source/Notebook 
 
 ### System Requirements
 
-It's highly suggest to use any Linux distro *(Ubuntu: highly recommended)* compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Troubleshooting](https://github.com/Grow-with-Open-Source/Notebook/discussions/2 "Goto Troubleshooting Discussion")...
+It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Troubleshooting](https://github.com/Grow-with-Open-Source/Notebook/discussions/2 "Goto Troubleshooting Discussion")...
 
 #### For Ubuntu:
 
 If you're using a Linux distribution - **Ubuntu**, follow these steps:
 
 - Install `Ruby` and other prerequisites:
+
 ```bash
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
 > Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem installation directory for your user account. The following commands will add environment variables to your `~/.bashrc`{: .file-path} file to configure the gem installation path:
+
 ```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+
 {: .prompt-info}
 
 - Finally, install Jekyll and Bundler:
+
 ```bash
 gem install jekyll bundler
 ```
 
 > For Other Linux Distros, check the offical Jekyll webpage[^other-linux-distros-installation]. Also make sure, you have installed `bundler` along with jekyll using the follow command:
+
 ```bash
 gem install bundler
 ```
+
 {: .prompt-tip}
 
 #### For Windows:
@@ -56,27 +62,32 @@ For Windows users, setting up the environment is a bit more involved:
 - At the end of installation, You'll get CMD asking you to enter option between 1-3. Enter 1 and then 3 as input one after another. After all the installation is done, press enter to close the CMD prompt.
   ![prompt-img](cmd-prompt-img.png)
 - Open a new command prompt window from the start menu and install Jekyll and Bundler:
+
 ```powershell
 gem install jekyll bundler
 ```
 
 #### For MacOS:
+
 If you're on MacOS, follow these steps:
 
 > Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed.
-{: .prompt-warning}
+> {: .prompt-warning}
 
 - Install `chruby` and `ruby-install` with Homebrew:
+
 ```bash
 brew install chruby ruby-install xz
 ```
 
-- Install the latest stable version of Ruby *(supported by Jekyll[^jekyll-offical-website])*:
+- Install the latest stable version of Ruby _(supported by Jekyll[^jekyll-offical-website])_:
+
 ```bash
 ruby-install ruby 3.1.3
 ```
 
 - This will take a few minutes, and once it’s done, configure your shell to automatically use chruby:
+
 ```bash
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
@@ -84,14 +95,16 @@ echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
 ```
 
 > If you’re using Bash, replace `.zshrc` with `.bash_profile`. If you’re not sure, read this external guide to [find out which shell you’re using](https://www.moncefbelyamani.com/which-shell-am-i-using-how-can-i-switch/ "find you shell").
-{: .prompt-info}
+> {: .prompt-info}
 
 - Quit and relaunch Terminal, then check that everything is working:
+
 ```bash
 ruby -v
 ```
 
 - After installing Ruby with chruby, install the latest Jekyll & bundler gem:
+
 ```bash
 gem install bundler jekyll
 ```
@@ -105,19 +118,23 @@ After setting up the environment, you can start contributing to the project:
 - Clone the forked repository to your local machine.
 
 - Use the following command to install project dependencies.
+
 ```bash
 bundle
 ```
 
 - Host the static website locally using the following command to preview the current state of the project.
+
 ```bash
 bundle exec jekyll s
 ```
 
 > Use `--incremental` argument to update the project live while working on it...
+
 ```bash
 bundler exec jekyll s --incremental
 ```
+
 {: .prompt-tip}
 
 ## Contribution Guidelines
@@ -131,6 +148,7 @@ To contribute effectively, please follow these guidelines:
 - Place your technical writing files within the **`_posts`{: .filepath}.** directory, following the naming convention **`YYYY-MM-DD-file-name.md`**, e.g., `2023-09-27-welcome-to-notebook.md`. **Use lowercase letters and separate words with a single dash.**
 
 - Add your author details to the **`_data/authors.yml`{: .filepath}.** file in the following format:
+
 ```yaml
 unique_key_value:
   name: <author_name>
@@ -139,17 +157,20 @@ unique_key_value:
 ```
 
 > For example:
+
 ```yaml
 shamith_watchdogs:
   name: Shamith Nakka
   twitter: Shamith29188225
   url: https://github.com/iamwatchdogs/
 ```
-{: .prompt-tip file='_data/authors.yml'}
+
+{: .prompt-tip file='\_data/authors.yml'}
 
 - Store images used in your content in **`assets/img/<your-project-name>/`{: .filepath}.**. While using external CDN links is recommended, you can also place files in this directory if necessary.
 
 - Each technical writing Markdown file should begin with the following configuration:
+
   ```md
   ---
   title: <title>
@@ -167,6 +188,7 @@ shamith_watchdogs:
   ```
 
 > Example:
+
 ```md
 ---
 title: Welcome to the Notebook
@@ -180,10 +202,11 @@ image:
   alt: "Welcome Page"
 ---
 ```
-{: .prompt-tip file='_posts/2023-09-21-welcome-page.md'}
+
+{: .prompt-tip file='\_posts/2023-09-21-welcome-page.md'}
 
 > Note that the `+/-TTTT` in the `date` section refers the **UTC offset**. You can find your **UTC offset** value by searching for your country in the [list of UTC](https://en.wikipedia.org/wiki/List_of_UTC_offsets "Goto List of UTC offsets"). And if you're from India, you can use the above UTC offset from the example.
-{: .prompt-info}
+> {: .prompt-info}
 
 Please ensure your contributions adhere to these guidelines to maintain consistency and make the project more accessible and user-friendly. **Happy contributing!**
 
