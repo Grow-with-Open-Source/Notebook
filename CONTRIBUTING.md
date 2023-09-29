@@ -299,6 +299,7 @@ Everybody can see you work and make use of it. Good job, mate !!...
 Here are some ground rules that you need to follow:
 
 - It's important for you to commit each and every change. Don't just finish all of your work with a single commit. If you're a newbie, it will only be tolerated for 3 times.
+- Sending several pull request for a single post is not accepted.
 - Your Pull Request will not be merged, if you have modified, changed or deleted any files or content that doesn't belong to you.
 - Pull Request containing any illegal, NFSW or any other content which doesn't help other in anyway possible will be close immediately.
 - The Pull Request will only be merged if you everything seem to be in order. You be notified if you did something wrong, and you pull request will only be merged if the notified changes are made.
