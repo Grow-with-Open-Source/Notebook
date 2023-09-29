@@ -1,15 +1,25 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
+img_path: "../../assets/img/about-tab"
 order: 4
 ---
 
-Welcome to **Notebook**, an open-source project proudly maintained by the GitHub organization [**Grow-with-Open-Source**](https://github.com/Grow-with-Open-Source/ "Goto Grow-with-Open-Source"). 🚀 **Notebook** is your gateway to a treasure trove of technical writing blogs and documentation contributed by passionate individuals from all corners of the digital world. 💡
+**Welcome to Notebook**, an open-source project by [Grow-with-Open-Source](https://github.com/Grow-with-Open-Source "visit Grow-with-Open-Source"). 🚀 Notebook is your gateway to technical writing blogs and documentation from contributors worldwide. 💡
 
-At its heart, **Notebook** is powered by the Jekyll theme [Chirpy](https://github.com/cotes2020/chirpy-starter "Goto Chirpy Template"), leveraging the robust capabilities of Jekyll, a framework crafted by GitHub using Ruby and gems 💎🖥️. This online web page is hosted on GitHub Pages, making it easily accessible to all who seek knowledge and collaboration 🌐.
+**Notebook** is powered by the GitHub's [Jekyll](https://jekyllrb.com/ "visit offical jekyll page") theme [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy "visit chirpy theme offical repo") and hosted on GitHub Pages, providing easy access to knowledge and collaboration 🌐.
 
-Our mission is simple yet profound: we are dedicated to fostering a vibrant community of learners and contributors 🙌. **Notebook** is open to everyone, providing a welcoming platform for individuals eager to embark on their open-source journey 🤝🌍. We extend an open invitation to all those who are willing to contribute their skills and support our project's growth 🌱🚀.
+![chirpy demo](chirpy-demo-page.png)
 
-Our primary objective is to empower individuals to make their first open-source contributions, particularly in the realm of no-code and low-code development 🛠️. Simultaneously, we aim to equip learners with valuable skills through the technical writing shared by our dedicated contributors 📝💡.
+- Our mission is to build a vibrant community of learners and contributors 🙌. We invite everyone to join us on their open-source journey 🤝🌍 and contribute to our growth 🌱🚀.
 
-To join our mission, explore our project repository at [https://github.com/Grow-with-Open-Source/Notebook.git](https://github.com/Grow-with-Open-Source/Notebook.git "Goto Notebook repo") 📚. **Notebook** is more than just a project; it's a thriving community of knowledge seekers and sharers. Join us today and be part of something meaningful! 🌟📚
+- We aim to empower individuals to make their first **open-source contributions**, especially in no-code and low-code contributions 🛠️ by sharing valuable skills through technical writing 📝💡.
+
+> Explore our project at <https://github.com/Grow-with-Open-Source/Notebook.git> 📚. Join our thriving community of knowledge seekers and sharers today! 🌟📚
+{: .prompt-tip}
+
+## Contributors
+
+Thank you for all of your efforts, dear contributors 🤝...
+
+[![contributors profile pics](https://contrib.rocks/image?repo=Grow-with-Open-Source/Notebook)](https://github.com/Grow-with-Open-Source/Notebook/graphs/contributors)
