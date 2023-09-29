@@ -31,12 +31,16 @@ Are you a tech enthusiast looking to expand your knowledge, or perhaps an experi
 
 At Notebook, we believe in the power of learning through collaboration. Our platform fosters a win-win situation where beginners gain valuable knowledge, and experts have the satisfaction of helping others on their journey.
 
+![win-win picture](win-win.jpeg)
+
 ## Get Started!
 
 - **Explore Content:** Start by browsing our extensive library of technical articles. You'll find a wide range of topics, from coding tips to software development trends.
 - **Contribute:** If you're an experienced developer, consider contributing your own articles. Sharing your expertise can make a real difference in someone's learning journey.
 - **Join the Community:** Connect with fellow developers, ask questions, and engage in discussions in our community forum. We're here to support each other.
 - **Stay Updated:** Don't miss out on the latest content and updates. Follow us on GitHub Organization stay in the loop.
+
+![getting-started-img](getting-started.jpeg)
 
 Whether you're here to learn or share, Notebook is your hub for all things tech. Let's grow together!
 
