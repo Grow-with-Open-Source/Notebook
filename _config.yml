@@ -21,7 +21,7 @@ timezone: Asia/Calcutta
 title: Notebook # the main title
 
 tagline: >- # it will display as the sub-title
-  A digital Notebook by the developer, for the developer, of the developer
+  An Open Source digital Notebook of the developer, by the developer, for the developer.
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
