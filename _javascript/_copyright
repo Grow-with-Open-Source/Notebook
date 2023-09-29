@@ -1,0 +1,1 @@
+Notebook v<%= pkg.version %> | © 2023 <%= pkg.author %> | <%= pkg.license %> Licensed | <%= pkg.homepage %>
