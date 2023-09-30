@@ -46,5 +46,5 @@ Whether you're here to learn or share, Notebook is your hub for all things tech.
 
 **Ready to embark on your developer's journey? Start exploring Notebook now!**
 
-> **For Contributors:** Checkout the [**Contribute to Notebook**](/posts/contribute-to-notebook "Goto post contribute-to-notebook") for more details regarding contributing to this open source.
+> **For Contributors:** Checkout the [**Contribute to Notebook**](../contribute-to-notebook "Goto post contribute-to-notebook") for more details regarding contributing to this open source.
 {: .prompt-info}
