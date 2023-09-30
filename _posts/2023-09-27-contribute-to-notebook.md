@@ -3,7 +3,7 @@ title: Contribute to Notebook
 date: 2023-09-27 13:23:00 +0530
 categories: [Welcome, Tutorial]
 tags: [introduction, markdown]
-img_path: " /assets/img/contribute-to-notebook"
+img_path: "/assets/img/contribute-to-notebook"
 image:
   path: "page-cover.png"
   alt: "Contribution Page"
@@ -131,13 +131,13 @@ After setting up the environment, you can start contributing to the project:
 - Start by [forking](https://github.com/Grow-with-Open-Source/Notebook/fork "let's fork the repo") the repository.
 
 - Clone the forked repository to your local machine.
-```bash
-#cloning the repo
-git clone https://github.com/<your-github-user-name>/Notebook.git
+  ```bash
+  #cloning the repo
+  git clone https://github.com/<your-github-user-name>/Notebook.git
 
-#entering the project directory
-cd Notebook
-```
+  #entering the project directory
+  cd Notebook
+  ```
 
 - Use the following command to install project dependencies.
 ```bash
