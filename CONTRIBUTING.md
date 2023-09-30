@@ -83,7 +83,7 @@ bundle info --path jekyll-theme-chirpy
 If you're on MacOS, follow these steps:
 
 > [!ALERT]
-> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/2#discussioncomment-7129945) within the discussion.
+> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 
 - Start by install `chruby` and `ruby-install` with Homebrew:
 ```bash

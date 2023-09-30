@@ -3,7 +3,7 @@ title: Contribute to Notebook
 date: 2023-09-27 13:23:00 +0530
 categories: [Welcome, Tutorial]
 tags: [introduction, markdown]
-img_path: "/assets/img/contribute-to-notebook"
+img_path: " /assets/img/contribute-to-notebook"
 image:
   path: "page-cover.png"
   alt: "Contribution Page"
@@ -17,7 +17,7 @@ Welcome to the [**Notebook**](https://github.com/Grow-with-Open-Source/Notebook 
 
 ### Setting up Environment
 
-It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Troubleshooting](https://github.com/Grow-with-Open-Source/Notebook/discussions/2 "Goto Troubleshooting Discussion")...
+It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
 
 #### For Ubuntu:
 
@@ -86,7 +86,7 @@ bundle info --path jekyll-theme-chirpy
 
 If you're on MacOS, follow these steps:
 
-> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/2#discussioncomment-7129945) within the discussion.
+> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 {: .prompt-warning}
 
 - Install `chruby` and `ruby-install` with Homebrew:
