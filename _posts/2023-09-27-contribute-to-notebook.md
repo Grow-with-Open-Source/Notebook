@@ -155,6 +155,9 @@ bundler exec jekyll s --incremental
 ```
 {: .prompt-tip}
 
+> If project build is successful, then you can view the project build that is hosted through your [localhost:4000/Notebook](http://127.0.0.1:4000/Notebook/). Well done, you have successfully setted up the project within your local system.
+{: .prompt-info}
+
 ## Contribution Guidelines
 
 To contribute effectively, please follow these guidelines:
@@ -192,7 +195,7 @@ shamith_watchdogs:
   categories: [<main_categories>, <sub_categories_1>, ..., <sub_categories_n>]
   tags: [<tag_1>, ..., <tag_n>]
   author: <respective_author_key_value>
-  img_path: "../../assets/img/<your_img_directory_name>/"
+  img_path: "/assets/img/<your_img_directory_name>/"
   image:
     path: <name_of_the_img_for_page_cover>
     alt: <alternative_text>
@@ -209,7 +212,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "../../assets/img/welcome/"
+img_path: "/assets/img/welcome-page/"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"
