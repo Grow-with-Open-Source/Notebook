@@ -83,7 +83,7 @@ bundle info --path jekyll-theme-chirpy
 If you're on MacOS, follow these steps:
 
 > [!ALERT]
-> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/2#discussioncomment-7129945) within the discussion.
+> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 
 - Start by install `chruby` and `ruby-install` with Homebrew:
 ```bash
@@ -152,7 +152,7 @@ bundle exec jekyll s
 bundler exec jekyll s --incremental
 ```
 
-- If project build is successful, then you can view the project build that is hosted through your [localhost:4000](http://127.0.0.1:4000/). Well done, you have successfully setted up the project within your local system.
+- If project build is successful, then you can view the project build that is hosted through your [localhost:4000/Notebook](http://127.0.0.1:4000/Notebook/). Well done, you have successfully setted up the project within your local system.
 
 ## Getting Started with Contribution
 
@@ -199,7 +199,7 @@ date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [<main_categories>, <sub_categories_1>, ..., <sub_categories_n>]
 tags: [<tag_1>, ..., <tag_n>]
 author: <respective_author_key_value>
-img_path: "../../assets/img/<your_img_directory_name>/" <!--(or) respective CDN link -->
+img_path: "/assets/img/<your_img_directory_name>/" <!--(or) respective CDN link -->
 image:
   path: <name_of_the_img_for_page_cover>
   alt: <alternative_text>
@@ -219,7 +219,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "../../assets/img/welcome-page/"
+img_path: "/assets/img/welcome-page/"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"

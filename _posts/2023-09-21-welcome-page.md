@@ -4,7 +4,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "../../assets/img/welcome-page/"
+img_path: "/assets/img/welcome-page/"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"
@@ -46,5 +46,5 @@ Whether you're here to learn or share, Notebook is your hub for all things tech.
 
 **Ready to embark on your developer's journey? Start exploring Notebook now!**
 
-> **For Contributors:** Checkout the [**Contribute to Notebook**](/posts/contribute-to-notebook "Goto post contribute-to-notebook") for more details regarding contributing to this open source.
+> **For Contributors:** Checkout the [**Contribute to Notebook**](../contribute-to-notebook "Goto post contribute-to-notebook") for more details regarding contributing to this open source.
 {: .prompt-info}

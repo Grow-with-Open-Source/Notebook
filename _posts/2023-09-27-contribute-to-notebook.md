@@ -3,7 +3,7 @@ title: Contribute to Notebook
 date: 2023-09-27 13:23:00 +0530
 categories: [Welcome, Tutorial]
 tags: [introduction, markdown]
-img_path: "../../assets/img/contribute-to-notebook"
+img_path: "/assets/img/contribute-to-notebook"
 image:
   path: "page-cover.png"
   alt: "Contribution Page"
@@ -17,7 +17,7 @@ Welcome to the [**Notebook**](https://github.com/Grow-with-Open-Source/Notebook 
 
 ### Setting up Environment
 
-It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Troubleshooting](https://github.com/Grow-with-Open-Source/Notebook/discussions/2 "Goto Troubleshooting Discussion")...
+It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
 
 #### For Ubuntu:
 
@@ -86,7 +86,7 @@ bundle info --path jekyll-theme-chirpy
 
 If you're on MacOS, follow these steps:
 
-> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/2#discussioncomment-7129945) within the discussion.
+> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 {: .prompt-warning}
 
 - Install `chruby` and `ruby-install` with Homebrew:
@@ -131,13 +131,13 @@ After setting up the environment, you can start contributing to the project:
 - Start by [forking](https://github.com/Grow-with-Open-Source/Notebook/fork "let's fork the repo") the repository.
 
 - Clone the forked repository to your local machine.
-```bash
-#cloning the repo
-git clone https://github.com/<your-github-user-name>/Notebook.git
+  ```bash
+  #cloning the repo
+  git clone https://github.com/<your-github-user-name>/Notebook.git
 
-#entering the project directory
-cd Notebook
-```
+  #entering the project directory
+  cd Notebook
+  ```
 
 - Use the following command to install project dependencies.
 ```bash
@@ -154,6 +154,9 @@ bundle exec jekyll s
 bundler exec jekyll s --incremental
 ```
 {: .prompt-tip}
+
+> If project build is successful, then you can view the project build that is hosted through your [localhost:4000/Notebook](http://127.0.0.1:4000/Notebook/). Well done, you have successfully setted up the project within your local system.
+{: .prompt-info}
 
 ## Contribution Guidelines
 
@@ -192,7 +195,7 @@ shamith_watchdogs:
   categories: [<main_categories>, <sub_categories_1>, ..., <sub_categories_n>]
   tags: [<tag_1>, ..., <tag_n>]
   author: <respective_author_key_value>
-  img_path: "../../assets/img/<your_img_directory_name>/"
+  img_path: "/assets/img/<your_img_directory_name>/"
   image:
     path: <name_of_the_img_for_page_cover>
     alt: <alternative_text>
@@ -209,7 +212,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "../../assets/img/welcome/"
+img_path: "/assets/img/welcome-page/"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"
