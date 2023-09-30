@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-img_path: "../../assets/img/about-tab"
+img_path: "/assets/img/about-tab"
 order: 4
 ---
 
