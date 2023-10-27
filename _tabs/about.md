@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
+# The default layout is 'page'
 icon: fas fa-info-circle
 img_path: "/assets/img/about-tab"
 order: 4
@@ -7,7 +7,7 @@ order: 4
 
 **Welcome to Notebook**, an open-source project by [Grow-with-Open-Source](https://github.com/Grow-with-Open-Source "visit Grow-with-Open-Source"). 🚀 Notebook is your gateway to technical writing blogs and documentation from contributors worldwide. 💡
 
-**Notebook** is powered by the GitHub's [Jekyll](https://jekyllrb.com/ "visit offical jekyll page") theme [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy "visit chirpy theme offical repo") and hosted on GitHub Pages, providing easy access to knowledge and collaboration 🌐.
+**Notebook** is powered by GitHub's [Jekyll](https://jekyllrb.com/ "visit offical jekyll page") theme [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy "visit chirpy theme offical repo") and hosted on GitHub Pages, providing easy access to knowledge and collaboration 🌐.
 
 ![chirpy demo](chirpy-demo-page.png)
 
