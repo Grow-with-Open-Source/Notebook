@@ -1,10 +1,10 @@
 # Welcome to CONTRIBUTING.md
 
-Hey there, fellow Developer !!!... I happy see, hyped about make your *, probably,* first contribution to this open source repo. I heartily welcome you to your journey in open source contribution. I hope you have fun learning and teaching at the same time. For the **Notebook**, most of the contribution done will be related to the content writing like blogs, tip & trick, tech update, various documentation, etc.
+Hey there, fellow Developer !!!... I am happy to see and hyped about making your *, probably,* first contribution to this open-source repo. I heartily welcome you to your journey in open source contribution. I hope you have fun learning and teaching at the same time. For the **Notebook**, most of the contribution will be related to content writing like blogs, tips & tricks, tech updates, various documentation, etc.
 
 ## Setting up Environment
 
-Before you even start working on your content writing, make sure you've got the right environment installed to build the project locally... As this project based on Jekyll[^1] framework that is built upon `Ruby`. We need `Ruby`, `Bundler` and `jekyll` framework to build and test within local systems. The installation process is different from platform to platform, so make sure you following the instruction properly.
+Before you even start working on your content writing, make sure you've got the right environment installed to build the project locally. As this project is based on Jekyll[^1] framework that is built upon `Ruby`. We need `Ruby`, `Bundler`, and `jekyll` frameworks to build and test within local systems. The installation process is different from platform to platform, so make sure you follow the instructions properly.
 
 ### For Ubuntu:
 
@@ -51,7 +51,7 @@ bundle info --path jekyll-theme-chirpy
 
 For Windows users, setting up the environment is a bit more involved:
 
-- Start by downloading and installing the `Ruby` using [RubyInstaller](https://rubyinstaller.org/downloads/ "Download RubyInstaller"), choose the the latest one with Devkit with default options.
+- Start by downloading and installing the `Ruby` using [RubyInstaller](https://rubyinstaller.org/downloads/ "Download RubyInstaller"), and choose the latest one with Devkit with default options.
 
 - At the end of the installation, You'll get CMD asking you to enter options between 1-3. Enter 3 as input, then you can enter 2 if you want to update `MYSYS2` but that's totally optional. After all the installation is done, press enter to close the CMD prompt.
 
@@ -85,7 +85,7 @@ If you're on MacOS, follow these steps:
 > [!ALERT]
 > Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 
-- Start by install `chruby` and `ruby-install` with Homebrew:
+- Start by installing `chruby` and `ruby-install` with Homebrew:
 ```bash
 brew install chruby ruby-install xz
 ```
@@ -160,9 +160,9 @@ Now that you set up the environment required and started analyzing the project, 
 
 ### Instructions and Guidelines
 
-- All of the content writing will be done in Markdown *(`.md`)* file format. So, Make yourself more comfortable Markdown syntax through [Offical GitHub Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github "visit the offical GitHub Docs").
+- All of the content writing will be done in Markdown *(`.md`)* file format. So, Make yourself more comfortable with Markdown syntax through [Offical GitHub Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github "visit the offical GitHub Docs").
 
-- Since this open source is based chripy[^2] theme jekyll[^1] project, You're not limited by Markdown only. You can do much more using simple Markdown that provides easy of writing while supporting limited HTML elements. Check out the Chirpy-based [post creation](https://chirpy.cotes.page/posts/write-a-new-post/) and [text and typography](https://chirpy.cotes.page/posts/text-and-typography/) posts to know more.
+- Since this open source is based chripy[^2] theme jekyll[^1] project, You're not limited by Markdown only. You can do much more using simple Markdown that provides easy writing while supporting limited HTML elements. Check out the Chirpy-based [post creation](https://chirpy.cotes.page/posts/write-a-new-post/) and [text and typography](https://chirpy.cotes.page/posts/text-and-typography/) posts to know more.
 
 - You need to add your details to link the author's details with the posts. You can add your author details to the **`_data/authors.yml`** file in the following format:
 ```yaml
@@ -236,7 +236,7 @@ image:
 > - If your post is using images and you have set the `img_path`, then you can directly access the images just by using their name.
 > - The `image` attribute will act as the page cover or thumbnail for your post. It's up to you to add a page-cover or not.
 
-These are the important instructions and guidelines you need to follow for creating a successful post without any issue.
+These are important instructions and guidelines you need to follow to create a successful post without any issues.
 
 ### Contributing
 
