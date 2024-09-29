@@ -180,7 +180,7 @@ unique_key_value:
 ```yml
 shamith_watchdogs:
   name: Shamith Nakka
-  twitter: Shamith29188225
+  twitter: shamith_nakka
   url: https://github.com/iamwatchdogs/
 ```
 
@@ -265,7 +265,7 @@ git branch
 git add .
 
 # commiting the changes
-git commit -m "<related-short-message>
+git commit -m "<related-short-message>"
 ```
 
 > [!IMPORTANT]
