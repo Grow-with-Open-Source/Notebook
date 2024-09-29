@@ -1,0 +1,25 @@
+name: Auto-commenter
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]  
+
+permissions:
+  id-token: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  automated-message:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          pullRequestClosed: >
+            👋 @{{ author }} This PR is closed. If you think there's been a mistake, please contact with the maintainer @iamwatchdogs.
+
+          pullRequestMerged: |
+            Thank you for contributing @{{ author }}, Make sure to check your contribution on [GitHub Pages](grow-with-open-source.github.io/Notebook/ "view contributions").
