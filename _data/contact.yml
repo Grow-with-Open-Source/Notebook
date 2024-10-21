@@ -11,7 +11,7 @@
 - type: email
   icon: "fas fa-envelope"
   noblank: true
-  url: 'tomail:shamith301102@gmail.com'
+  url: 'tomail:contact.growwithopensource@gmail.com'
 
 - type: rss
   icon: "fas fa-rss"
