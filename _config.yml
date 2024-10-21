@@ -39,7 +39,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Grow-with-Open-Source
-  email: shamith301102@gmail.com # change to your email address
+  email: contact.growwithopensource@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/Grow-with-Open-Source/
@@ -47,7 +47,7 @@ social:
     - https://github.com/iamwatchdogs # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/shamith-n-02b535226/
+    - https://www.linkedin.com/company/Grow-with-Open-Source/
 
 google_site_verification: # fill in to your verification string
 
