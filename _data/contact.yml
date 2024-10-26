@@ -4,9 +4,9 @@
   icon: "fab fa-github"
   url: 'https://github.com/Grow-with-Open-Source/Notebook'
 
-# - type: twitter
-#   icon: "fa-brands fa-x-twitter"
-#   url: ''
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+  url: 'https://x.com/_gwos'
 
 - type: email
   icon: "fas fa-envelope"
