@@ -3,7 +3,7 @@ title: Contribute to Notebook
 date: 2023-09-27 13:23:00 +0530
 categories: [Welcome, Tutorial]
 tags: [introduction, markdown]
-img_path: "/assets/img/contribute-to-notebook"
+media_subpath: "/assets/img/contribute-to-notebook"
 image:
   path: "page-cover.png"
   alt: "Contribution Page"
