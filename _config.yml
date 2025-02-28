@@ -216,8 +216,6 @@ exclude:
   - docs
   - tools
   - README.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
   - LICENSE
   - purgecss.js
   - rollup.config.js
