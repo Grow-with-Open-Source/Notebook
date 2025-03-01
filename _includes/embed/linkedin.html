@@ -1,0 +1,14 @@
+{% assign height = include.height | default: '1200' %}
+{% assign width = include.width | default: '600' %}
+{% assign title = include.title | default: 'Embedded LinkedIn Post' %}
+
+<div style="width: 100%; padding: 1rem; display: flex; justify-content: center; align-items: center;">
+  <iframe 
+    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:{{ include.id }}" 
+    height="{{ height }}" 
+    width="{{ width }}" 
+    frameborder="0" 
+    allowfullscreen="" 
+    title="{{ title }}"
+  ></iframe>
+</div>
