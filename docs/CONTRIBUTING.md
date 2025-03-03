@@ -6,11 +6,7 @@ Hey there, fellow Developer !!!... We're happy to see and hyped about making you
 
 Before you even start working on your content writing, make sure you've got the right environment installed to build the project locally. As this project is based on Jekyll[^1] framework with Chirpy theme, you can refer to the [offical documentation by Chirpy theme](https://chirpy.cotes.page/posts/getting-started/ "goto chirpy-theme docs") or you can follow the following instruction which are derived from the official docs...
 
-### For Windows:
-
-The recommended way to setup environment for this project is through dev container, but you can also install all the dependecies natively if you want **(native installation is NOT recommended)**. 
-
-#### Dev Container
+### Dev Container
 
 To setup environment using **Dev Container**, follow the instruction
 
@@ -26,6 +22,10 @@ Dev container does all the heavy lifting for you and creates a container and set
 
 > [!NOTE]
 > If you're doing this for the first time, it might take a while depending on your system specs. 
+
+### For Windows:
+
+The recommended way to setup environment for this project is through [Dev Container](#dev-container), but you can also install all the dependecies natively if you want **(native installation is NOT recommended)**. 
 
 <details>
 <summary><h4>Native Installation (Not Recommended)</h4></summary>
@@ -86,7 +86,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 
 - Install required dependecies using package manager.
 ```bash
-sudo apt install ruby-full build-essential zlib1g-dev -y
+sudo apt install -y ruby-full build-essential zlib1g-dev
 ```
 
 > [!TIP]
@@ -138,7 +138,7 @@ ruby-install ruby 3.4.1
 ```bash
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-echo "chruby ruby-3.1.3" >> ~/.zshrc
+echo "chruby ruby-3.4.1" >> ~/.zshrc
 source ~/.zshrc
 ```
 > [!NOTE]
