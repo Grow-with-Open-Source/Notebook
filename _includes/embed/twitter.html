@@ -1,0 +1,75 @@
+{% assign theme = include.theme | default: "dark" %}
+{% assign align = include.align | default: "center" %}
+{% assign width = include.width %}
+{% assign cards = include.cards %}
+{% assign conversation = include.conversation %}
+
+<div id="tweet-{{ include.id }}">
+  <style>
+    :root {
+      --tweet-border-radius: 13.5px;
+    }
+    #tweet-{{ include.id }} iframe,
+    #tweet-{{ include.id }} iframe[data-tweet-id] {
+      border-radius: var(--tweet-border-radius) !important;
+      -webkit-border-radius: var(--tweet-border-radius) !important;
+      -moz-border-radius: var(--tweet-border-radius) !important;
+    }
+  </style>
+</div>
+
+<script>
+  /* --- Twitter Embed Script --- */
+  window.twttr = (function (d, s, id) {
+    var fjs = d.getElementsByTagName(s)[0];
+    var t = window.twttr || {};
+
+    if (d.getElementById(id)) return t;
+
+    var js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function (f) {
+      t._e.push(f);
+    };
+
+    return t;
+  })(document, "script", "twitter-wjs");
+
+  /* --- Injecting Tweet to the DOM element --- */
+  window.twttr.ready(function () {
+    var options = {
+      theme: "{{ theme }}",
+      align: "{{ align }}",
+    };
+
+    if ("{{ width }}") options.width = "{{ width }}";
+    if ("{{ cards }}") options.cards = "{{ cards }}";
+    if ("{{ conversation }}") options.conversation = "{{ conversation }}";
+
+    window.twttr.widgets.createTweet(
+      "{{ include.id }}",
+      document.getElementById("tweet-{{ include.id }}"),
+      options
+    );
+  });
+
+  /* --- Load Twitter widgets --- */
+  if (typeof window.tweetLoader === "undefined") {
+    window.tweetLoader = function () {
+      try {
+        window.twttr.widgets.load();
+      } catch (error) {
+        console.error("Error loading Twitter widgets:", error);
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", window.tweetLoader, {
+      once: true,
+      passive: true,
+    });
+  }
+</script>

@@ -34,11 +34,11 @@ With Notebook, you can easily contribute to technical content and gain valuable 
 
 Hey there, fellow developer !!!... I'm happy to see you intrested in contributing to this open source project. Since, this project is an open notebook for everyone, you're always welcome to make your techinal writing contribution by writing you own blog, tip & trick, documentation and much more. All you have to do is write down your content in `markdown` *(just like how wrote this README.md file)* and place those file within `_posts` directory. 
 
-> First time ???... Then I highly recommend you to check out [CONTRIBUTING.md](CONTRIBUTING.md "goto CONTRIBUTING.md").
+> First time ???... Then I highly recommend you to check out [CONTRIBUTING.md](docs/CONTRIBUTING.md "goto CONTRIBUTING.md").
 
-- **Step 1:** Make sure you install the required dependencies like `Ruby`, `bundler` and `Jekyll` framework. Installation varies from platform to platform, so make sure to check out the [CONTRIBUTING.md](CONTRIBUTING.md "goto CONTRIBUTING.md").
+- **Step 1:** Setting up development environment. Refer to [CONTRIBUTING.md](docs/CONTRIBUTING.md "goto CONTRIBUTING.md") that guide you to setup the required evironment for the project.
 
-- **Step 2:** After installing the required dependencies, [fork](https://github.com/Grow-with-Open-Source/Notebook/fork "Let's fork this repo") this repository and clone it in your local system, using the following command:
+- **Step 2:** After setting up environment, [fork](https://github.com/Grow-with-Open-Source/Notebook/fork "Let's fork this repo") this repository and clone it in your local system, using the following command:
 ```bash
 git clone https://github.com/<your-github-profile>/Notebook.git
 ```
@@ -80,7 +80,7 @@ unique_key_value:
 ```yml
 shamith_watchdogs:
   name: Shamith Nakka
-  twitter: Shamith29188225
+  twitter: shamith_nakka
   url: https://github.com/iamwatchdogs/
 ```
 
@@ -90,7 +90,8 @@ shamith_watchdogs:
 
 - **Step 6:** Now to the actual task, Create a new markdown file with `YYYY-MM_DD-your-post-name.md` *(make sure your post name is in small letters and separated by single dash)* within the [`_post`](/tree/main/_posts/) directory.
 
-- **Step 7:** Each and every markdown file that you have created for content writing should contain the following meta data (or) config:
+- **Step 7:** Each and every markdown file that you have created for content writing should contain the following meta data called `Front Matter
+`:
 ```md
  ---
   title: <title>
@@ -98,7 +99,7 @@ shamith_watchdogs:
   categories: [<main_categories>, <sub_categories_1>, ..., <sub_categories_n>]
   tags: [<tag_1>, ..., <tag_n>]
   author: <respective_author_key_value>
-  img_path: "/assets/img/<your_img_directory_name>/"
+  media_subpath: "/assets/img/<your_img_directory_name>/"
   image:
     path: <name_of_the_img_for_page_cover>
     alt: <alternative_text>
@@ -118,7 +119,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "/assets/img/welcome-page/"
+media_subpath: "/assets/img/welcome-page"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"
@@ -132,10 +133,10 @@ image:
 
 > [!NOTE] 
 > - Note that the `+/-TTTT` in the `date` section refers the **UTC offset**. You can find your **UTC offset** value by searching for your country in the [list of UTC](https://en.wikipedia.org/wiki/List_of_UTC_offsets "Goto List of UTC offsets"). And if you're from India, you can use the above UTC offset from the example.
-> - Also not that `img_path` and `image` *(including its sub attributes)* are optional and only need when you're going to add images to your post.
+> - Also not that `media_subpath` and `image` *(including its sub attributes)* are optional and only need when you're going to add images to your post.
 > - If there are more than one person working on a single post use `authors` attribute instead of `author`. And the input for the `authors` attribute will be a list of key of authors specified within the [`authors.yml`](_data/authors.yml) file.
 
-- **Step 8:** Now, you can proceed to write your technical content. And if you have any images that are part of your technical writing, then create a new directory using your post's name within `assets/img` directory as `assets/img/<your-post-name>`. Now add your images to your folder. After adding images to your folder, don't forget to add location to `img_path` attribute as `img_path: ../../assets/img/<your-post-name>`. Now, you can directly access your images with specifying full relative path.
+- **Step 8:** Now, you can proceed to write your technical content. And if you have any images that are part of your technical writing, then create a new directory using your post's name within `assets/img` directory as `assets/img/<your-post-name>`. Now add your images to your folder. After adding images to your folder, don't forget to add location to `media_subpath` attribute as `media_subpath: ../../assets/img/<your-post-name>`. Now, you can directly access your images with specifying full relative path.
 
 > [!NOTE] 
 > It's highly suggested to use CDN links for images. But if you could not for any reason, then you can proceed with above process.

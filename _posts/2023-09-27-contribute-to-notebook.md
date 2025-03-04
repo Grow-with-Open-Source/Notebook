@@ -3,7 +3,7 @@ title: Contribute to Notebook
 date: 2023-09-27 13:23:00 +0530
 categories: [Welcome, Tutorial]
 tags: [introduction, markdown]
-img_path: "/assets/img/contribute-to-notebook"
+media_subpath: "/assets/img/contribute-to-notebook"
 image:
   path: "page-cover.png"
   alt: "Contribution Page"
@@ -17,112 +17,170 @@ Welcome to the [**Notebook**](https://github.com/Grow-with-Open-Source/Notebook 
 
 ### Setting up Environment
 
-It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
+Let's start by setting up the project within your local system. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
 
-#### For Ubuntu:
+#### Using Dev Container
 
-If you're using a Linux distribution - **Ubuntu**, follow these steps:
+This approach is platform independent as it uses Docker to create the isolated development environment within dev container. You can use it Windows, Linux and MacOS system with ease. Let's start from scratch, shall we ???...
 
-- Install `Ruby` and other prerequisites:
+- Start by downloading and Installing [Docker Desktop](https://www.docker.com/products/docker-desktop/ "go download docker desktop") on your system.
+- Then download and install [VS Code](https://code.visualstudio.com/ "go download vs code").
+- Within your VS Code, Install [Dev Container extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers "go install dev-container extension") from the extensions tab.
+
+Well that's it... You got the all the things are ready and all you gotta do is reopen the project file by clicking <kbd>Reopen in container</kbd>, just as shown below...
+
+![Dev Container Demo](../dev-container-demo.gif)
+
+Dev container does all the heavy lifting for you and creates a container and setup the required environment for you. Now, you can write your blog within this dev container and then commit and push your changes though the shell of the container.
+
+> If you're doing this for the first time, it might take a while depending on your system specs. 
+ {: .prompt-tip }
+
+#### For Windows:
+
+Coming to windows-based system, it highly recommended to use [Dev Container](#using-dev-container) approach as it simplifies the complex installation and dependencies handling. But if you wish to go for a native installation, You can find it in the below disclosed details below.
+
+<details>
+<summary>Native Installation <b>(Not Recommended)</b></summary>
+
+<p>So you want to do things in a hard way. It's not like we're hear to judge you, but all we got to say is that "<b>THIS 👇</b>" is one heck of a process you have to go through. Can't you just stick to <a href="#using-dev-container" title="go back to dev container">Dev Container</a> ???...</p>
+
+<p>Anyways, Here's how you can setup the required environment thought native installation in Windows...</p>
+
+<ul>
+  <li>Start by downloading and installing the <code class="language-plaintext highlighter-rouge">Ruby</code> using <a href="https://rubyinstaller.org/downloads/" title="Download RubyInstaller" target="_blank">Ruby Installer</a>, and choose the latest one with Devkit with default options.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">ridk install</code> on command prompt, If the installer doesn't prompt you the following image at the end of the installation...</li>
+  <a href="/Notebook/assets/img/contribute-to-notebook/cmd-prompt-img.png" class="popup img-link"><img src="/cmd-prompt-img.png" alt="prompt-img" loading="lazy"></a>
+  <li>Go ahead and select <kbd>MSYS2 and MINGW development toolchain</kbd> option by pressing <code class="language-plaintext highlighter-rouge">3</code> + <kbd>Enter</kbd></li>
+  <li>Open a new command prompt window from the start menu, Use the following command to check whether <code class="language-plaintext highlighter-rouge">Ruby</code> has been properly installed and its <code class="language-plaintext highlighter-rouge">PATH</code> has been set properly.</li>
+  <div class="language-powershell highlighter-rouge"><div class="code-header">
+  <span data-label-text="Powershell"><i class="fas fa-code fa-fw small"></i></span>
+  <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div>
+  <div class="highlight">
+  <code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">ruby</span><span class="w"> </span><span class="nt">-v</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
+  <li>Now use the following command to install <code class="language-plaintext highlighter-rouge">Jekyll</code> and <code class="language-plaintext highlighter-rouge">Bundler</code>:</li>
+  <div class="language-powershell highlighter-rouge">
+  <div class="code-header">
+  <span data-label-text="Powershell"><i class="fas fa-code fa-fw small"></i></span>
+  <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div>
+  <div class="highlight">
+  <code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">gem</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">jekyll</span><span class="w"> </span><span class="nx">bundler</span><span class="w"> </span><span class="nx">jekyll-theme-chirpy</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div>
+</div>
+  <li>Now, your system is ready to build and use the project locally.</li>
+</ul>
+<blockquote class="prompt-tip">
+  <p>You can checkout <a href="https://jekyllrb.com/docs/installation/" title="goto jekyll docs" target="_blank">Jekyll Docs</a> for more details regarding installation.</p>
+</blockquote>
+</details>
+
+#### For Unix-based Systems:
+
+For Unix-based systems, it's **recommended** to go for **native installation** but you can do for [Dev Container](#using-dev-container "go back to dev-containers") if you want some application-level isolation. Now that's out of our way, let's take a took at the installation process...
+
+- Installing Jekyll framework with required dependcies based on your system/distro from [Jekyll official docs](https://jekyllrb.com/docs/installation/ "goto jekyll docs").
+- And that's it... you're done, you got required environment for running project.
+
+Just so that we get a glimpse of a native installation, let's take a look how we do things in unix-based system by taking **Ubuntu** _(most popular distro used from beginners to general-purpose user and power users)_.
+
+- Starting up by updating your system file using,
 ```bash
-sudo apt-get install ruby-full build-essential zlib1g-dev -y
+sudo apt update -y && sudo apt upgrade -y
 ```
 
-> Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem installation directory for your user account. The following commands will add environment variables to your `~/.bashrc`{: .file-path} file to configure the gem installation path:
+- Now it's time for `ruby` and other core dependencies,
+```bash
+sudo apt -y install ruby-full build-essential zlib1g-dev
+```
+
+- Now that we've got our core dependencies, let's add environment variables,
 ```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
 ```
+
+> Note that as it's not recommended to install or set environmental variable on `root` level and keep things `user` level, atleast as recommended by [official docs](https://jekyllrb.com/docs/installation/ "goto jekyll docs"). But if you still want to do, just make sure you know what you're doing.
 {: .prompt-info}
 
-- Use the following command, to check whether `Ruby` has properly installed and its PATH has been set properly.
+- Now, let's source the `~/.bashrc`{: .file-path} to access the environmental variable within the current session.
+```bash
+source ~/.bashrc
+```
+
+- Now that we have installed dependecies and configured all the environmental varible, let's test if `ruby` is installed properly or not...
 ```bash
 ruby -v
 ```
 
-- Finally, install Jekyll and Bundler:
+- Finish up the installation by installing required dependecies for the project,
 ```bash
-gem install jekyll bundler
+gem install jekyll bundler jekyll-theme-chirpy
 ```
 
-> For Other Linux Distros, check the offical Jekyll webpage[^other-linux-distros-installation]. Also make sure, you have installed `bundler` along with jekyll using the follow command:
-```bash
-gem install bundler
-```
-{: .prompt-tip}
-
-- Use the following command to check whether the `bundler` and jekyll framework installed properly or not.
-```bash
-bundle info --path jekyll-theme-chirpy
-```
-
-#### For Windows:
-
-For Windows users, setting up the environment is a bit more involved:
-
-- Start by downloading and installing the the `Ruby` using [RubyInstaller](https://rubyinstaller.org/downloads/ "Download RubyInstaller"), choose the the latest one with Devkit with default options.
-
-- At the end of installation, You'll get CMD asking you to enter option between 1-3. Enter 3 as input, then you can enter 2 if you want to update `MYSYS2` but that's totally optional. After all the installation is done, press enter to close the CMD prompt.
-![prompt-img](cmd-prompt-img.png)
-
-- Use the following command, to check whether `Ruby` has properly installed and its PATH has been set properly.
-```powershell
-ruby -v
-```
-
-- Open a new command prompt window from the start menu and install Jekyll and Bundler:
-```powershell
-gem install jekyll bundler
-```
-
-- Use the following command to check whether the `bundler` and jekyll framework installed properly or not.
-```bash
-bundle info --path jekyll-theme-chirpy
-```
+- And it's done, now you have the required environment to run the project.
 
 #### For MacOS:
 
-If you're on MacOS, follow these steps:
+Coming to MacOs-based system, it kinda similar situtation with [Unix-based system](#for-unix-based-systems "goto unix-based system section") 'cause it's one of the offspring of Unix-based system. Anyways, all I was trying to say is that you can either with **native installation** _(which is recommended)_ or [Dev Container](#using-dev-container "go back to dev-containers") _(another fairly good option)_. And if you want to proceed with native installation, here's how you can do it...
 
-> Ensure you have the [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
-{: .prompt-warning}
-
-- Install `chruby` and `ruby-install` with Homebrew:
+- Make sure you have [Homebrew](https://brew.sh/ "Install Homebrew") package manager installed. If not you can install using,
 ```bash
-brew install chruby ruby-install xz
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-- Install the latest stable version of Ruby _(supported by Jekyll[^jekyll-offical-website])_:
-```bash
-ruby-install ruby 3.1.3
-```
-
-- This will take a few minutes, and once it’s done, configure your shell to automatically use chruby:
-```bash
-echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
-echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
-```
-
-> If you’re using Bash, replace `.zshrc` with `.bash_profile`. If you’re not sure, read this external guide to [find out which shell you’re using](https://www.moncefbelyamani.com/which-shell-am-i-using-how-can-i-switch/ "find you shell").
+> If you're facing any issues while setting up the project in MacOS, check out the [Trobleshooting post](https://github.com/Grow-with-Open-Source/Notebook/discussions/3#discussioncomment-7151280) within the [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion") discussion.
 {: .prompt-info}
 
-- Quit and relaunch Terminal, then check that everything is working:
-```bash
+- Now we're going install `chruby` as version manager to install and manager various version of `ruby`
+```zsh
+brew install chruby ruby-install
+```
+
+- Let's go ahead and install `ruby` version 3.4.1 which is recommended by [official docs](https://jekyllrb.com/docs/installation/macos/ "open jekyll docs").
+```zsh
+ruby-install ruby 3.4.1
+```
+
+- Now that's done, let's configure the shell for `chruby` to work as expected.
+```zsh
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.4.1" >> ~/.zshrc # run 'chruby' to see actual version
+```
+
+> If you’re using Bash, replace `.zshrc` with `.bashrc` or `.bash_profile` . If you’re not sure, read this external guide to [find out which shell you’re using](https://www.moncefbelyamani.com/which-shell-am-i-using-how-can-i-switch/ "find you shell").
+{: .prompt-info}
+
+- Now that we have configured `chruby`, let's make sure the changes are updated within our current session,
+```zsh
+source ~/.zshrc
+#
+# If your default shell is bash, then use the following
+#
+# source ~/.bashrc
+#
+#      (or)
+#
+# source ~/.bash_profile
+#
+# depending on where you have configured
+```
+
+- Time for testing !!!... Let's see if `ruby` is installed properly or not,
+```zsh
 ruby -v
 ```
 
-- After installing Ruby with chruby, install the latest Jekyll & bundler gem:
-```bash
-gem install bundler jekyll
+- Finally, let's install the core dependencies for the project...
+```zsh
+gem install jekyll bundler jekyll-theme-chirpy
 ```
 
-- Use the following command to check whether the `bundler` and jekyll framework installed properly or not.
-```bash
-bundle info --path jekyll-theme-chirpy
-```
+- Now you're ready to use the project...
 
 ### **Building the Project**
 
@@ -132,10 +190,10 @@ After setting up the environment, you can start contributing to the project:
 
 - Clone the forked repository to your local machine.
   ```bash
-  #cloning the repo
+  # cloning the repo
   git clone https://github.com/<your-github-user-name>/Notebook.git
 
-  #entering the project directory
+  # entering the project directory
   cd Notebook
   ```
 
@@ -180,7 +238,7 @@ unique_key_value:
 ```yaml
 shamith_watchdogs:
   name: Shamith Nakka
-  twitter: Shamith29188225
+  twitter: shamith_nakka
   url: https://github.com/iamwatchdogs/
 ```
 {: .prompt-tip file='_data/authors.yml'}
@@ -195,7 +253,7 @@ shamith_watchdogs:
   categories: [<main_categories>, <sub_categories_1>, ..., <sub_categories_n>]
   tags: [<tag_1>, ..., <tag_n>]
   author: <respective_author_key_value>
-  img_path: "/assets/img/<your_img_directory_name>/"
+  media_subpath: "/assets/img/<your_img_directory_name>/"
   image:
     path: <name_of_the_img_for_page_cover>
     alt: <alternative_text>
@@ -212,7 +270,7 @@ date: 2023-09-21 20:34:00 +0530
 categories: [Welcome, Guide]
 tags: [introduction]
 author: shamith_watchdogs
-img_path: "/assets/img/welcome-page/"
+media_subpath: "/assets/img/welcome-page/"
 image:
   path: "welcome-img.jpg"
   alt: "Welcome Page"

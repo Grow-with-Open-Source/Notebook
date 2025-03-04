@@ -4,7 +4,7 @@ date: 2024-10-22 02:08:00 +0530
 categories: [DevOps, GitHub-Actions]
 tags: [github, github-action, devops, ci-cd, automation, beginner]
 author: shamith_watchdogs
-img_path: "/assets/img/intro-to-github-actions/"
+media_subpath: "/assets/img/intro-to-github-actions"
 image:
  path: "github-action.jpg"
  alt: "GitHub Actions"
