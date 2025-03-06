@@ -22,7 +22,7 @@
 
 Welcome to **Notebook**, an open-source project designed with beginners in mind! Notebook is all about creating a friendly and supportive environment for developers of all levels. Whether you're just starting your coding journey or you're an experienced pro, there's a place for you here.
 
-With Notebook, you can easily contribute to technical content and gain valuable experience in the world of open source. Our blog-like platform, built on GitHub's [Jekyll](https://jekyllrb.com/ "visit offical jekyll website") framework and adorned with the user-friendly [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy "goto chripy offical repo")theme, makes it a breeze to share your knowledge and learn from others. **It's a win-win situation:** beginners learn from the insightful posts by contributors, while contributors get the satisfaction of helping others on their coding journey. Join us at Notebook and let's learn and grow together!
+With Notebook, you can easily contribute to technical content and gain valuable experience in the world of open source. Our blog-like platform, built on GitHub's [Jekyll](https://jekyllrb.com/ "visit offical jekyll website") framework and adorned with the user-friendly [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy "goto chripy offical repo") theme, makes it a breeze to share your knowledge and learn from others. **It's a win-win situation:** beginners learn from the insightful posts by contributors, while contributors get the satisfaction of helping others on their coding journey. Join us at Notebook and let's learn and grow together!
 
 <div align="center">
 
