@@ -26,5 +26,19 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+  "cSpell.words": [
+    "davidlday",
+    "devcontainers",
+    "esbenp",
+    "killalau",
+    "languagetool",
+    "mhutchie",
+    "mkhl",
+    "shellcheck",
+    "shfmt",
+    "timonwong",
+    "yzhang"
+  ],
+  "languageToolLinter.serviceType": "public"
 }
