@@ -14,21 +14,27 @@ Deep learning is currently one of the most booming technologies, playing a major
 
 ## Motivation
 
-The main motivation of this blog is help both developers and people in general who are looking to learn a few things about Machine Learning and specifically Deep Learning. I want to demystify some of the common misconceptions that people take for granted without filtering out the facts from the overly hyped ___"AI"___ product within the current marketplace. Talking specifically about developers, this blogs helps them kick-start their journey into field deep learning and helps them understand a thing or two when they hear more advancements or attend an event.
+The main motivation of this blog is help both developers and people in general who are looking to learn a few things about Machine Learning and specifically about Deep Learning. I want to demystify some of the common misconceptions that people take for granted without filtering out the facts from the overly hyped ___"AI"___ marketplace. Talking specifically about developers, this blogs helps them kick-start their journey into field of Deep Learning and helps them understand a thing or two when they hear about more advancements made within this domain or when you attend a relevant event/keynote.
 
-When I was planning to write a blog on deep learning, I have no prior exposure to this domain. I do have some idea where to begin, but I got lost in numerous resources but most of them are not so clear on the prerequisites to understand their material. During that time, I got into one of scholarship for a GenAI course on Udacity platform offered by Bertelsmann. Taking this course helped me understand the core fundamental of deep learning within the first module. I spent quite some time understanding the core components of a simple deep learning model called "Multilayer Perceptron". I really thank Bertelsmann for sponsoring the GenAI Nano Degree program on Udacity platform, this course motivated me to share my learning thus supporting my initial cause to work on this blog. 
+When I was planning to write a blog on deep learning, I have no prior exposure to this domain. I have an idea of where to begin, but I got overwhelmed by the numerous resources, many of which are unclear about the prerequisites needed to understand their material. And during that time, I got into one of scholarship for a GenAI course on Udacity platform offered by Bertelsmann. Taking this course helped me understand the core fundamental of deep learning within the first module. I spent quite some time understanding the core components of a simple deep learning model called "Multi-Layer Perceptron". I really thank Bertelsmann for sponsoring the GenAI Nano Degree program on Udacity platform, this course motivated me to share my learning thus supporting my initial cause for writing this blog. 
 
 {% include embed/twitter.html id="1894221279336480880" %}
 
-Don't worry, this course is not the only resource from which I transpile the knowledge to you. I have my done my research and iterated over many parts of blog just to get thing right and more beginner-friendly.
+Don't worry, that course 👆 is not the only resource from which I explain the concept to you. Please be assured as I have my done my research and iterated over many materials to get things just the right amount for you to learn enough about deep learning. I spent countless hours in refining my learning and evaluating various reference material to make this blog as accurate and beginner-friendly as possible. I would really appreciate it if you show your support on my social network like <a href="https://www.linkedin.com/in/shamith-nakka/" title="goto my linkedin profile" target="_blank">LinkedIn</a> and <a href="https://x.com/shamith_nakka" title="goto my twitter/x profile" target="_blank">Twitter/X</a>, motivating me to bring more quality content to you.
 
 ## In this blog
 
 In this section, we'll talk about the things you can expect from this blog and prerequisites and stuff... And before we proceed, I want to let you know that Deep Learning is vast domain and there are lots 'n lots of concepts within deep learning and can't be covered within this blog. Even though the scope of this blog ends with <abbr title="Multi-Layer Perceptron"><b>MLP</b></abbr>, I want to you understand the very fundamentals that made Deep Learning what it is today.
 
+The agenda of this blog does as follows: 
+- First we're going to start with conceptual topics with some mathematics.
+- We'll end this blog with by building a simple **MLP** model by creating a custom dataset. 
+
+As much I want to implement each algorithm for each component within the **MLP** architecture using python & its libraries, I decided to keep things simple and keep the explanation of various topics on a conceptual level while maintain a good level of abstraction and separated the implementation to use modern practices to build/design the **MLP** architecture using PyTorch. 
+
 ### Overview
 
-With that being said, let take a look at things which we're going to cover in the blog.
+With that being said, let take a look at the things which we're going to cover in the blog.
 
 - We'll start from the very beginning and fundamental question ___"What is Deep Learning ?"___
 - Then, we'll take a peek into the overall architecture of a very simple & very basic deep learning model called "Multilayer Perceptron" _(also known as <abbr title="Multi-Layer Perceptron"><b>MLP</b></abbr>)_
