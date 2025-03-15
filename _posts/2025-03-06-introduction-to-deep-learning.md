@@ -6,7 +6,7 @@ tags: [introduction, artificial-intelligence, machine-learning, deep-learning, p
 author: shamith_watchdogs
 media_subpath: "/assets/img/intro-to-deep-learning"
 image:
-  path: "deep-learning.[png | jpg | jpeg]"
+  path: "deep-learning.webp"
   alt: "Deep Learning"
 ---
 
