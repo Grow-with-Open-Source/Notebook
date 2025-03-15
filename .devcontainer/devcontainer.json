@@ -6,7 +6,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
         // Liquid tags auto-complete
@@ -22,7 +22,10 @@
         "stylelint.vscode-stylelint",
         "yzhang.markdown-all-in-one",
         // Git
-        "mhutchie.git-graph"
+        "mhutchie.git-graph",
+        // Blog writing utilities
+        "streetsidesoftware.code-spell-checker",
+        "davidlday.languagetool-linter"
       ]
     }
   }
