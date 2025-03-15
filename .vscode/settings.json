@@ -27,7 +27,13 @@
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
   },
+  "languageToolLinter.plainText.languageIds": ["markdown"],
   "cSpell.words": [
+    "miniconda",
+    "numpy",
+    "Pipenv",
+    "Udacity",
+    "venv"
     "davidlday",
     "devcontainers",
     "esbenp",
@@ -40,5 +46,9 @@
     "timonwong",
     "yzhang"
   ],
+  "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+    "miniconda",
+    "venv"
+  ]
   "languageToolLinter.serviceType": "public"
 }
