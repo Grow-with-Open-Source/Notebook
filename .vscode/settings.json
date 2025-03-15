@@ -27,6 +27,10 @@
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
   },
-  "cSpell.words": ["Udacity"],
-  "languageToolLinter.plainText.languageIds": ["markdown"]
+  "cSpell.words": ["miniconda", "numpy", "Pipenv", "Udacity", "venv"],
+  "languageToolLinter.plainText.languageIds": ["markdown"],
+  "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+    "miniconda",
+    "venv"
+  ]
 }
